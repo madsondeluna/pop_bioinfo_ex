@@ -1,6 +1,6 @@
 # Procedimento Operacional Padrão (POP) – Identificação de Padrões Proteicos com HMM
 
-**Código:** BIOINF-POP-HMM-001  
+**Código:** BIOINF-POP-HMM-001 / Ex.: SETOR-POP-TECNICA-VERSAO
 
 **Versão:** v1.0  
 
