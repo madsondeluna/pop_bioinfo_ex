@@ -22,7 +22,7 @@ Padronizar o procedimento para buscar e identificar padrões ou famílias de pro
 
 ## 2. Escopo
 
-Este POP aplica-se a laboratórios e equipes de bioinformática que necessitam detectar domínios ou motivos proteicos específicos em grandes conjuntos de sequências (proteomas). Aplica-se ao uso de HMMER v3.x em distribuições Linux (ex.: Ubuntu, CentOS).
+Este POP aplica-se a usuários que necessitam detectar domínios ou motivos proteicos específicos em grandes conjuntos de sequências (proteomas). Aplica-se ao uso de HMMER v3.x em distribuições Linux (ex.: Ubuntu, CentOS).
 
 ---
 
