@@ -71,7 +71,7 @@ A classe representa a estrutura ou família funcional do peptídeo. As principai
 
 | Abreviação | Significado                            |
 | ---------- | -------------------------------------- |
-| AMP        | Genérico ou validado experimentalmente |
+| AMP        | Validado experimentalmente |
 | AMPc       | Predito in silico                      |
 | AMPmod     | Versão modificada ou otimizada         |
 | AMPsyn     | AMP projetado sinteticamente (de novo) |
