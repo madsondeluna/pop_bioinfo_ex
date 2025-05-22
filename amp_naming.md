@@ -1,4 +1,4 @@
-# Protocolo de Padronização da Nomenclatura de Peptídeos Antimicrobianos (AMPs) do LGBV
+# Protocolo de Padronização da Nomenclatura de Peptídeos Antimicrobianos do LGBV
 
 **Responsável:** Madson Aragão 
 
