@@ -71,9 +71,9 @@ A classe representa a estrutura ou família funcional do peptídeo. As principai
 
 | Abreviação | Significado                            |
 | ---------- | -------------------------------------- |
-| AMP        | Validado experimentalmente |
-| AMPc       | Predito in silico                      |
-| AMPmod     | Versão modificada ou otimizada         |
+| AMPnat        | Peptídeo natual |
+| AMPsil       | Predito apenas in silico                      |
+| AMPmod     | Versão modificada ou otimizada de um AMPnat ou AMPsil        |
 | AMPsyn     | AMP projetado sinteticamente (de novo) |
 
 ---
