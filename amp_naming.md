@@ -10,7 +10,7 @@
 
 ## 1. Objetivo
 
-Estabelecer diretrizes para a nomenclatura padronizada de peptídeos antimicrobianos (AMPs) identificados, preditos ou projetados em projetos conduzidos pelo grupo de pesquisa. Este protocolo visa garantir consistência, reprodutibilidade e clareza na organização dos dados.
+Estabelecer diretrizes para a nomenclatura padronizada de peptídeos antimicrobianos (AMPs) identificados, preditos ou projetados em projetos conduzidos pelo LGBV. Este protocolo visa garantir consistência, reprodutibilidade e clareza na organização na anotações dos dados.
 
 ---
 
