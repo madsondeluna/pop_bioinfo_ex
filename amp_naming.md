@@ -185,7 +185,7 @@ Este componente indica a versão da sequência peptídica específica.
 
 ---
 
-## 10. Recursos Futuros (Em Desenvolvimento ou Planejados)
+## 10. Recursos Futuros 
 
 * Modelo de planilha padrão para metadados de AMPs (Google Sheets, Excel).
 * Script em Python interativo para auxiliar na geração de identificadores padronizados.
