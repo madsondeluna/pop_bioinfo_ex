@@ -19,7 +19,7 @@ Estabelecer diretrizes claras e sistemáticas para a nomenclatura padronizada de
 O identificador único para cada AMP deverá seguir rigorosamente o padrão abaixo, composto por cinco componentes obrigatórios, separados por *underline* (`_`):
 
 
-`[Espécie][Classe][TipoAMP][Número][Versão]`
+`[Espécie]_[Classe]_[TipoAMP]_[Número]_[Versão]`
 
 
 
