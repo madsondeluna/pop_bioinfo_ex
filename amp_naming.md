@@ -1,4 +1,4 @@
-# Protocolo de Padronização da Nomenclatura de Peptídeos Antimicrobianos do LGBV [Versão 0.2]
+# Protocolo de Padronização da Nomenclatura de Peptídeos Antimicrobianos do LGBV
 
 **Responsável:** Madson Aragão
 
