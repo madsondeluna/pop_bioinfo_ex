@@ -10,7 +10,7 @@
 
 ## 1. Objetivo
 
-Estabelecer diretrizes claras e sistemáticas para a nomenclatura padronizada de peptídeos antimicrobianos (AMPs) identificados, preditos, modificados ou projetados *de novo* em projetos conduzidos pelo Laboratório de Genômica e Biotecnologia Vegetal (LGBV). Este protocolo visa garantir consistência, rastreabilidade, facilidade de comunicação e organização eficiente dos dados, minimizando ambiguidades e facilitando a colaboração e a reprodutibilidade científica.
+Estabelecer diretrizes claras e sistemáticas para a nomenclatura padronizada de peptídeos antimicrobianos (AMPs) identificados, preditos, modificados ou projetados *de novo* em projetos conduzidos pelo Laboratório de Genética e Biotecnologia Vegetal (LGBV). Este protocolo visa garantir consistência, rastreabilidade, facilidade de comunicação e organização eficiente dos dados, minimizando ambiguidades e facilitando a colaboração e a reprodutibilidade dos dados.
 
 ---
 
