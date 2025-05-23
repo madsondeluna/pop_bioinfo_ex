@@ -19,7 +19,8 @@ Estabelecer diretrizes claras e sistemáticas para a nomenclatura padronizada de
 O identificador único para cada AMP deverá seguir rigorosamente o padrão abaixo, composto por cinco componentes obrigatórios, separados por *underline* (`_`):
 
 
-[Espécie][Classe][TipoAMP][Número][Versão]
+`[Espécie][Classe][TipoAMP][Número][Versão]`
+
 
 
 Cada componente é crucial para a correta identificação e categorização do peptídeo e será detalhado nas seções subsequentes.
