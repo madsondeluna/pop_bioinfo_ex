@@ -1,7 +1,9 @@
 # Protocolo de Padronização da Nomenclatura de Peptídeos Antimicrobianos do LGBV [Versão 0.2]
 
 **Responsável:** Madson Aragão
+
 **Versão:** 0.2
+
 **Data:** 22 de maio de 2025
 
 ---
