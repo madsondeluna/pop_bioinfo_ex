@@ -2,9 +2,9 @@
 
 **Responsável:** Madson Aragão
 
-**Versão:** 0.2
+**Versão:** 0.3
 
-**Data:** 22 de maio de 2025
+**Data:** 24 de maio de 2025
 
 ---
 
