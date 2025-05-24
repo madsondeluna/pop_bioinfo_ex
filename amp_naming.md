@@ -36,7 +36,7 @@ Este componente indica a origem taxonômica do AMP ou da fonte dos dados para pr
     * Para metagenomas ou fontes não específicas, utilizar abreviações padronizadas (ex: Metagenoma -> `Meta`).
 * **Lógica:**
     * Se o AMP for natural ou predito a partir de um organismo específico, usa-se a abreviação desse organismo.
-    * Se for sintético (*de novo*), mas inspirado em sequências de uma espécie, pode-se usar a espécie de inspiração ou um código genérico como `Syn` (se não houver inspiração específica). No entanto, para manter a rastreabilidade da ideia original, se um AMP sintético foi desenhado com base em características de AMPs de *Arabidopsis thaliana*, `At` ainda poderia ser usado, com o `[TipoAMP]` `AMPsyn` clarificando sua natureza sintética.
+    * Se for sintético (*de novo*), mas inspirado em sequências de uma espécie, pode-se usar a espécie de inspiração ou um código genérico como `Syn` (se não houver inspiração específica). No entanto, para manter a rastreabilidade da ideia original, se um AMP sintético foi desenhado com base em características de AMPs de *Arabidopsis thaliana*, `At` ainda poderia ser usado, com o `[TipoAMP]` `AMPsyn` silanizando sua natureza sintética.
     * Para AMPs modificados (`AMPmod`), a espécie refere-se à do peptídeo original que sofreu a modificação.
 
 | Nome Científico / Fonte  | Abreviação Proposta | Observação                                       |
