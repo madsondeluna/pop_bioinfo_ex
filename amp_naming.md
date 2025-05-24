@@ -62,7 +62,7 @@ Este componente indica a origem taxonômica do AMP ou da fonte dos dados para pr
 
 Este componente categoriza o AMP com base em sua família estrutural, funcional ou mecanismo de ação conhecido ou predito.
 
-* **Lógica:** A classificação deve ser baseada em evidências de ferramentas de bioinformática (ex: InterProScan, Pfam, BLASTp contra bancos de dados de AMPs como APD, DBAASP), predições estruturais (ex: PEP-FOLD, AlphaFold) ou literatura científica descrevendo famílias homólogas.
+* **Lógica:** A classificação deve ser baseada em evidências de ferramentas de bioinformática (ex: InterProScan, Pfam, BLASTp contra bancos de dados de AMPs como APD, DBAASP), predições estruturais (ex: PEP-FOLD, AlphaFold) ou literatura descrevendo famílias homólogas.
 * Se um AMP puder pertencer a múltiplas classes, escolher a mais específica ou relevante para o estudo. Se nenhuma classe conhecida se aplicar, utilizar `Unk` (Desconhecido).
 
 | Classe Funcional/Estrutural      | Abreviação | Descrição Sucinta                                                                 |
@@ -79,7 +79,7 @@ Este componente categoriza o AMP com base em sua família estrutural, funcional 
 | Beta-barrel (poro transmembrana) | `BBar`     | Peptídeos que formam estruturas beta-barril, frequentemente em membranas.         |
 | Desconhecido/Novel               | `Unk`      | Classe estrutural/funcional ainda não determinada ou não se encaixa nas demais.   |
 
-*Observação:* Esta lista pode ser expandida conforme novas classes relevantes surjam nos projetos do LGBV.
+*Observação:* Esta lista pode ser expandida conforme novas classes surjam nos projetos do LGBV.
 
 ---
 
@@ -89,7 +89,7 @@ Este componente é crucial para entender como o peptídeo foi obtido ou identifi
 
 | Abreviação | Significado/Definição                                                                                                                                                                                             | Exemplo de Cenário de Origem                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | :--------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **AMPnat** | **Peptídeo Natural** <br> AMP isolado e identificado diretamente de uma fonte biológica (animal, planta, microrganismo), com sua sequência e atividade nativa determinadas e confirmadas experimentalmente *in vitro* ou *in vivo*. A descoberta primária é experimental. | Uma nova defensina é purificada do extrato de sementes de *Vigna unguiculata*. Sua sequência é determinada por espectrometria de massas e Edman, e sua atividade antifúngica é confirmada em bioensaios. <br> *Ex: Vu_Def_AMPnat_001_v1* |
+| **AMPnat** | **Peptídeo Natural** <br> AMP isolado e identificado diretamente de uma fonte biológica (animal, planta, microrganismo), com sua sequência e atividade nativa determinadas e confirmadas experimentalmente *in vitro* ou *in vivo*. A descoberta primária é experimental. | Uma nova defensina é purificada do extrato de sementes de *Vigna unguiculata*. Sua sequência é determinada por espectrometria de massa, e sua atividade antifúngica é confirmada em bioensaios. <br> *Ex: Vu_Def_AMPnat_001_v1* |
 | **AMPcom** | **Peptídeo Computacional (Predito)** <br> Sequência peptídica candidata a AMP, identificada unicamente por ferramentas de bioinformática (*in silico*) a partir de bancos de dados genômicos, transcriptômicos ou proteômicos. Neste estágio, não há (ou não havia no momento da primeira catalogação) confirmação experimental de sua existência como peptídeo funcional ou de sua atividade. | Um pipeline de bioinformática analisa o genoma de *Arabidopsis thaliana* e prediz uma nova sequência com alta probabilidade de ser uma defensina, baseada em homologia e modelos de aprendizado de máquina. A sequência ainda não foi sintetizada ou testada. <br> *Ex: At_Def_AMPcom_001_v1* |
 | **AMPmod** | **Peptídeo Modificado** <br> Versão alterada de um AMP preexistente (seja um `AMPnat`, um `AMPcom` que foi sintetizado, ou um `AMPsyn` anterior). A modificação é intencional, visando, por exemplo, otimizar atividade, aumentar estabilidade, reduzir toxicidade, ou alterar especificidade. As modificações podem incluir substituições, deleções, adições de aminoácidos, ciclização, conjugação com outras moléculas, etc. | Um `AMPnat` conhecido (ex: `Ec_Bact_AMPnat_005_v1`) tem sua atividade aumentada após a substituição de dois resíduos de Leucina por Arginina. Esta nova sequência modificada seria catalogada como um `AMPmod`. <br> *Ex: Ec_Bact_AMPmod_001_v1* (onde `001` é o próximo número sequencial para `AMPmod` da classe `Bact` em `Ec`, e `_v1` indica a primeira versão desta modificação específica). O metadado deve referenciar o peptídeo original. |
 | **AMPsyn** | **Peptídeo Sintético (*de novo*)** <br> AMP desenhado e sintetizado artificialmente em laboratório, sem um molde direto de uma sequência natural ou computacionalmente predita preexistente e idêntica. O design é racional, podendo ser baseado em princípios físico-químicos, padrões estruturais de AMPs, algoritmos de inteligência artificial, ou combinação de fragmentos de diferentes peptídeos. | Uma equipe projeta uma nova sequência peptídica alfa-helicoidal anfifílica com 15 aminoácidos, combinando características ideais (carga positiva, hidrofobicidade controlada) para atividade contra bactérias Gram-negativas, sem que essa sequência exata exista em bancos de dados naturais. <br> *Ex: Syn_Amph_AMPsyn_001_v1* (se design genérico) ou *Meta_Lipo_AMPsyn_003_v1* (se desenhado a partir de inspiração em lipopeptídeos de metagenoma). |
@@ -167,19 +167,19 @@ Este componente indica a versão da sequência peptídica específica.
 * **Metadados Detalhados:** Manter uma planilha ou banco de dados centralizado com metadados ricos para cada peptídeo. Campos sugeridos:
     * `ID_LGBV` (o identificador completo)
     * `Nome_Comum` (se houver)
-    * `Sequencia_AA`
+    * `Sequencia_AA` (baseado apenas em AAs canônicos)
     * `Origem_Peptideo_Pai` (para `AMPmod`, referenciar o ID do peptídeo original)
-    * `Descricao_Modificacao` (para `AMPmod` e versões >v1)
-    * `Fonte_Dados_Original` (ex: ID do genoma no NCBI, ID do artigo)
+    * `Descricao_Modificacao` (para `AMPmod` e versões > v1)
+    * `Fonte_Dados_Original` (ex: ID do genoma no NCBI, Phytozome ou in house, ID do artigo...)
     * `Localizacao_Genomica` (Cromossomo/Contig, coordenadas, gene ID)
     * `Ferramentas_Predicao_Classe` (ex: InterProScan ID, HMMER e-value)
-    * `Ferramentas_Predicao_AMP` (ex: AMPScanner score, DeepAMP resultado)
-    * `Status_Experimental` (ex: Não testado, Sintetizado, Atividade confirmada contra X, MIC)
-    * `Data_Registro`
-    * `Pesquisador_Responsavel`
-    * `Projeto_Associado`
+    * `Ferramentas_Predicao_AMP` (ex: CAMPr, AMPScanner score, DeepAMP resultado)
+    * `Status_Experimental` (ex: Não testado, Sintetizado, Atividade confirmada contra X, valores de MIC)
+    * `Data_Registro` (DD/MM/AA)
+    * `Pesquisador_Responsavel` (nome e sobrenome)
+    * `Projeto_Associado` (título do proj. de IC, mestrado ou doutorado)
     * `Publicacoes_Associadas` (DOIs)
-    * `Notas`
+    * `Notas` (observações gerais)
 * **Controle de Versão de Metadados:** Registrar alterações na planilha de metadados ou no banco de dados utilizando um sistema de versionamento ou changelogs.
 * **Ferramentas:** Considerar o uso de bancos de dados relacionais (CSV gerenciado com Git, SQLite) conforme a escala da base. Scripts (Python ou Bash) podem auxiliar na geração de IDs e na manutenção da consistência.
 
