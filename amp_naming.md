@@ -181,16 +181,16 @@ Este componente indica a versão da sequência peptídica específica.
     * `Publicacoes_Associadas` (DOIs)
     * `Notas`
 * **Controle de Versão de Metadados:** Registrar alterações na planilha de metadados ou no banco de dados utilizando um sistema de versionamento ou changelogs.
-* **Ferramentas:** Considerar o uso de bancos de dados simples (CSV gerenciado com Git, SQLite) ou sistemas mais robustos (LIMS, ELN) conforme a escala do laboratório. Scripts (Python, R) podem auxiliar na geração de IDs e na manutenção da consistência.
+* **Ferramentas:** Considerar o uso de bancos de dados relacionais (CSV gerenciado com Git, SQLite) conforme a escala da base. Scripts (Python ou Bash) podem auxiliar na geração de IDs e na manutenção da consistência.
 
 ---
 
 ## 10. Recursos Futuros 
 
-* Modelo de planilha padrão para metadados de AMPs (Google Sheets, Excel).
-* Script em Python interativo para auxiliar na geração de identificadores padronizados.
-* Integração da lógica de nomenclatura em workflows de bioinformática existentes (ex: Snakemake, Nextflow) para atribuição automática de IDs a novos AMPs preditos.
-* Repositório centralizado (possivelmente privado no GitHub/GitLab do LGBV) para sequências e metadados.
+* Modelo de planilha padrão para metadados de AMPs.
+* Script interativo para auxiliar na geração de identificadores padronizados, também incluídos na nova plataforma de consulta do LGBV.
+* Integração da lógica de nomenclatura em workflows de bioinformática existentes para atribuição automática de IDs a novos AMPs preditos.
+* Repositório centralizado para sequências e metadados (em fase final de desenvolvimento por Rafael).
 
 ---
 
